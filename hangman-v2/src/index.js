@@ -1,7 +1,9 @@
-let game1;
+import Hangman from './hangman'
+import getPuzzle from './requests'
 
 const puzzleEl = document.querySelector('#hangman-word');
 const statusEl = document.querySelector('#status');
+let game1;
 
 window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode);
